@@ -9,20 +9,20 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', '20389440'))
-    API_HASH = str(getenv('API_HASH', 'a1a06a18eb9153e9dbd447cfd5da2457'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN', ''))
-    name = str(getenv('name', 'filetolinkvjbot'))
+    API_ID = int(getenv('API_ID', '10942774'))
+    API_HASH = str(getenv('API_HASH', 'eb86f562fb093924264c2b76c308e6ea'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN', '7496729209:AAF9VT5XSnB7xxHcS4sFGKw59S2ziIlp3ew'))
+    name = str(getenv('name', 'filetolinkmikey'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001935365147'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001768694683'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "6168162777").split())  
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "5587289828").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'kingvj01'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'hlecter69'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
@@ -36,5 +36,5 @@ class Var(object):
     else:
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://sushankm16:4i1WAfPYKWyqPIDD@cluster0.sngp9pz.mongodb.net/?retryWrites=true&w=majority'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'vj_botz'))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'mkv_blasters'))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
